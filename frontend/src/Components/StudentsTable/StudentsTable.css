@@ -1,0 +1,110 @@
+/* Table Container */
+.Table-Container {
+    min-width: 20vh;
+    min-height: 20vh;
+    padding: 30px;
+    margin: 10px; /* Unified margin instead of individual margin-left, margin-right, margin-top */
+    background-color: rgba(239, 229, 229, 0.15); /* Transparent white background for glass effect */
+    border-radius: 8px;
+    border: 1px solid rgba(211, 210, 210, 0.5); /* Semi-transparent border */
+    backdrop-filter: blur(10px); /* Blur effect to create the glassmorphism effect */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Table Header */
+.tableHead {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    min-width: 110vh;
+    background-color: rgba(2, 88, 100, 0.7); /* Transparent background with a color overlay */
+    color: white;
+    border: 1px solid rgba(231, 232, 238, 0.4); /* Slightly transparent border */
+    border-radius: 8px;
+    margin-bottom: 2%;
+    backdrop-filter: blur(6px); /* Light blur for glassmorphism */
+}
+
+/* Table Header List Items */
+.tableHead li {
+    list-style: none;
+    padding: 5px;
+    text-align: center; /* Center text in header items */
+}
+
+/* Table Card Container */
+.TableCard-Container {
+    display: flex;
+    list-style: none;
+    min-width: 10vh;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    border-radius: 8px;
+    background-color: rgba(245, 246, 251, 0.75); /* Semi-transparent background for the cards */
+    min-height: 8vh;
+    border: 1px solid rgba(234, 221, 221, 0.4); /* Semi-transparent border */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+    align-items: center; /* Vertically center content in the card */
+    backdrop-filter: blur(8px); /* Glassmorphism blur effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Hover Effect for Table Cards */
+.TableCard-Container:hover {
+    background-color: rgba(224, 235, 240, 0.85); /* Slightly darker background on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transform: translateY(-3px); /* Slight lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+    border: 1px solid rgba(2, 88, 100, 0.6); /* Slight border accent for clarity */
+}
+
+.TableCard-Container.hovered {
+    background-color: rgba(2, 88, 100, 0.3); /* Highlighted semi-transparent background */
+    border: 1px solid rgba(2, 88, 100, 0.8); /* Accent border */
+    box-shadow: 0 6px 12px rgba(2, 88, 100, 0.5); /* Stronger shadow for emphasis */
+    transform: translateY(-3px); /* Consistent with hover effect */
+}
+
+/* Table Content */
+.table-content {
+    display: flex;
+    min-width: 110vh;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px; /* Adds space between items */
+}
+
+/* Performance Container */
+.Performance-container {
+    margin-top: 5vh;
+    padding: 10px;
+    min-width: 20vh;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+    .tableWithCard {
+        flex-direction: column; /* Stack the table and card vertically on small screens */
+    }
+
+    .Table-Container {
+        min-width: 100%;
+        min-height: 40vh;
+        margin: 10px 0;
+    }
+
+    .table-content {
+        flex-direction: column; /* Stack items in table content */
+        justify-content: flex-start; /* Align items to the top */
+        min-width: 100%;
+    }
+
+    .TableCard-Container {
+        min-width: 90%; /* Adjust card size for smaller screens */
+    }
+}

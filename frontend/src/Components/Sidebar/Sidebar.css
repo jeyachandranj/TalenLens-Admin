@@ -1,0 +1,62 @@
+/* Sidenav Container */
+.Sidenav-container {
+    width: 30vw; /* 30% of the viewport width */
+    padding: 10px;
+    min-height: 100vh; /* Full screen height minus a little space for the header */
+    background-color: #025864e6; /* Background color with opacity for glassmorphism */
+    border-radius: 0px; /* Rounded corners */
+    box-sizing: border-box; /* Includes padding in the element's total width and height */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Logo Section */
+.logo {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white; /* White color for logo */
+}
+
+/* Menu Items Container */
+.menu-items {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    margin-top: 5vh;
+    padding-left: 10px;
+    margin-right: 10px;
+    list-style-type: none;
+}
+
+/* Menu Link Styling */
+.menu-items .Link {
+    padding: 1.2vh;
+    font-size: 17px;
+    border-radius: 9px;
+    margin-top: 1.3vh;
+    color: #d8e1e3; /* Link color */
+    margin-left: 2vh;
+    outline: none;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and color */
+    text-decoration: none; /* Removes underline */
+}
+
+/* Hover Effect on Menu Links */
+.menu-items .Link:hover {
+    background-color: #b8bece; /* Blue background on hover */
+    color: white; /* White text on hover */
+}
+
+/* Focus Effect on Menu Links */
+.menu-items .Link:focus {
+    background-color: #787a7f; /* Blue background when focused */
+    color: white; /* White text when focused */
+}
+
+/* Active/Selected Link Styling */
+.menu-items .Link.active {
+    background-color: #025864; /* Active link color */
+    color: white;
+}

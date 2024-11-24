@@ -1,0 +1,151 @@
+/* Students Card Container */
+.StudentsCard-Container {
+  min-width: 30vh;
+  min-height: 20vh;
+  padding: 20px;
+  background-color: rgba(239, 229, 229, 0.15); /* Semi-transparent background for visibility */
+  border-radius: 8px;
+  border: 1px solid rgba(211, 210, 210, 0.5); /* Border with slight transparency */
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1vh; /* Responsive margin */
+  margin-bottom: 5vh; /* Ensure spacing at the bottom */
+  overflow: visible; /* Ensure that the content inside is visible */
+}
+
+/* Card Content */
+.StudentCard-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center; /* Center text */
+  padding: 10px;
+  overflow: visible; /* Prevent clipping */
+}
+
+/* Profile Image */
+.profile {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover;
+  border: 3px solid #4caf50; /* Border around the profile image */
+}
+
+/* Name Styling */
+h1 {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Text Styling for Paragraphs */
+p {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 5px 0;
+}
+
+/* Background for Specific Sections (Email, Experience, Company) */
+.email, .experience, .company {
+  background-color: #02596430; /* Light background */
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Score Progress Bar */
+.MuiBox-root {
+  width: 100%;
+  margin-top: 15px;
+}
+
+/* Linear Progress Bar Styling */
+.MuiLinearProgress-root {
+  border-radius: 5px;
+}
+
+.MuiLinearProgress-bar {
+  border-radius: 5px;
+}
+
+.MuiLinearProgress-colorPrimary {
+  background-color: #e0e0e0;
+}
+
+/* Score Progress Bar */
+.score-progress {
+  background-color: #4caf50;
+}
+
+/* Duration Progress Bar */
+.duration-progress {
+  background-color: #2196f3;
+}
+
+/* Button Styling */
+.MuiButton-root {
+  width: 100px;
+  border-radius: 20px;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  text-transform: none;
+  margin-top: 15px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .StudentsCard-Container {
+    max-width: 90%; /* Adjust width on smaller screens */
+    margin-top: 5vh; /* Ensure spacing from the top */
+  }
+
+  .profile {
+    width: 70px;
+    height: 70px;
+  }
+
+  h1 {
+    font-size: 1.3rem; /* Adjust font size for smaller screens */
+  }
+
+  p {
+    font-size: 0.9rem; /* Adjust paragraph font size */
+  }
+
+  /* Adjust the spacing and layout for better responsiveness */
+  .email, .experience, .company {
+    padding: 8px; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .StudentsCard-Container {
+    max-width: 100%; /* Ensure full-width on very small screens */
+    margin-top: 10vh; /* Increase margin on smaller screens */
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  .profile {
+    width: 60px;
+    height: 60px;
+  }
+
+  h1 {
+    font-size: 1.1rem; /* Further adjust font size for small devices */
+  }
+
+  p {
+    font-size: 0.85rem; /* Adjust font size even further */
+  }
+}

@@ -1,0 +1,65 @@
+
+.dashboard{
+    width: 90%;
+    padding: 20px;
+    background-color: #F8F8F9;
+}
+
+/* Home Page */
+.Details-container{
+    display: flex;
+    margin-top: 5vh;
+    align-items: center;
+    gap: 2vh;
+    padding: 10px;
+    min-width: 20vh;
+    height: 20vh;
+}
+
+.Performance-container{
+    margin-top: 5vh;
+    padding: 10px;
+    min-width: 20vh;
+}
+
+
+/* Overview Container */
+.Overview-container{
+    display: flex;
+}
+.Overview-Profile{
+    display: flex;
+    align-items: center;
+    width: 110vh;
+    height: 25vh;
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 5vh;
+    border: 1px solid rgb(184, 172, 172);
+}
+
+.overview-profile-img{
+    height: 20vh;
+    width: 20vh;
+    margin-left: 3vh;
+}
+
+.profile-title{
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.overview-statistics{
+    width: 45vh;
+    height: 70vh;
+    margin-top: 5vh;
+    margin-left: 4vh;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid rgb(184, 172, 172);
+}
+
+.overview-statistics h1{
+    margin-top: 3vh;
+}

@@ -1,0 +1,47 @@
+/* Details Card Container */
+.DetailsCard-Container {
+    width: 100%; /* Fill the available width */
+    max-width: 25vh; /* Optional, ensures card doesn't get too wide */
+    height: 15vh; /* Maintain the smaller height */
+    border-radius: 12px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white for glassmorphism effect */
+    border: 1px solid rgba(228, 226, 226, 0.5); /* Light border with transparency */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    backdrop-filter: blur(8px); /* Glassmorphism blur effect */
+    padding: 10px; /* Reduced padding */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    display: flex; /* Ensure it uses flex layout to fill space */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between; /* Space out content evenly */
+}
+
+/* Hover Effect for Details Card */
+.DetailsCard-Container:hover {
+    transform: translateY(-5px); /* Slightly lift the card on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+/* Card Content */
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Allow content to grow and fill the space */
+    height: 100%; /* Ensure the content fills the card */
+    text-align: center; /* Center the text content */
+}
+
+/* Heading Inside the Card */
+.card-content h1 {
+    font-size: 18px; /* Adjust font size */
+    color: #333; /* Dark color for contrast */
+    margin: 0; /* Remove margin */
+}
+
+/* Title Inside the Card */
+.card-title {
+    color: #aeacac;
+    font-size: 16px; /* Adjust font size */
+    margin-top: 1vh; /* Reduce margin */
+}
