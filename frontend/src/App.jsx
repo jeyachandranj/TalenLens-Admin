@@ -5,6 +5,7 @@ import Sidenav from "./Components/Sidebar/Sidenav";
 import Student from "./Pages/Student";
 import Home from "./Pages/Home";
 import Overview from "./Pages/Overview";
+import Messages from "./Pages/Messages";
 
 const App = () => {
 
@@ -17,6 +18,7 @@ const App = () => {
               <Route path="/home" element={<Home/>}/>
               <Route path="/details" element={<Student/>}/>
               <Route path="/overview" element={<Overview/>}/>
+            <Route path="/Messages" element={<Messages/>} />
             </Routes>
           </div>
       </section>

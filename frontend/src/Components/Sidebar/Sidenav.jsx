@@ -9,7 +9,7 @@ const Sidenav = () => {
         <ul className="menu-items">
             <Link to={"/home"} className='Link'>Home</Link>
             <Link to={"/details"} className='Link'>Students</Link>
-            <Link to={"/details"} className='Link'>Messages</Link>
+            <Link to={"/Messages"} className='Link'>Messages</Link>
             <Link to={"/details"} className='Link'>Performance</Link>
         </ul>
       </section>
